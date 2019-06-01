@@ -14,6 +14,11 @@ function getMyInfo() {
           payload: {
             userId: 12,
             userName: 'Khuong Dao',
+            email: 'minh.khuong1306@gmail.com',
+            company: {
+              name: 'LINE VN',
+              address: 'Hanoi, Vietnam',
+            },
             userRole: {
               id: 1,
               name: 'Administrator'

@@ -69,7 +69,7 @@ class DefaultHeader extends Component {
                             </DropdownItem>
                             <DropdownItem
                                 onClick={() => {
-                                    MyNavigator.navigateTo('/my-profile')
+                                    MyNavigator.navigateTo('/me')
                                 }}
                             >
                                 <i className="fa fa-user"/> Hồ sơ

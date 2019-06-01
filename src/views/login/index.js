@@ -27,7 +27,7 @@ function doLogin() {
           }
         })
         resolve({token: "1234567"})
-      }, 2000)
+      }, 1500)
     })
   }
 }

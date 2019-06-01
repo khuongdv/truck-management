@@ -1,0 +1,87 @@
+.user-avatar-in-list {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  margin-right: 4px;
+}
+.staff-table-action-td span {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    width: 26px;
+    padding: 5px;
+    line-height: 1;
+}
+.them-quyen-data {
+    &.modal-dialog {
+        @media (min-width: 576px) {
+            max-width: 80%;
+            width: 770px;
+        }
+        button.btn-secondary {
+            background-color: white;
+            &:active {
+                background-color: #d8eafd;
+            }
+        }
+    }
+}
+.add-user-modal-wrapper {
+    &.modal-dialog {
+        @media (min-width: 576px) {
+            max-width: 80%;
+        }
+        button.btn-secondary {
+            background-color: white;
+            &:active {
+                background-color: #d8eafd;
+            }
+        }
+    }
+}
+.tb-user-list {
+    &.table th {
+        vertical-align: middle;
+        border-top: 1px solid #c8ced3;
+        padding: 3px;
+    }
+    &.table td {
+        vertical-align: middle;
+        border-top: 1px solid #c8ced3;
+        padding: 3px;
+    }
+}
+.dot-green {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 10px;
+  background-color: green;
+}
+.dot-red {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 10px;
+  background-color: red;
+}
+.add-user-dlg-role-cbb button, .add-user-dlg-role-cbb > div {
+  width: 100%;
+  text-align: left;
+}
+.add-user-dlg-avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    display: inline-block;
+    margin: auto;
+}
+.m1-form {
+    label {
+        padding-left: 0px;
+        text-transform: uppercase;
+    }
+}
