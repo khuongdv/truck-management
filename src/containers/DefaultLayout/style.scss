@@ -1,0 +1,18 @@
+.dlg {
+    &.modal-dialog {
+
+        @media (min-width: 576px) {
+            max-width: 70%;
+        }
+    }
+}
+.sidebar-minimized.brand-minimized {
+    .added-nav-item {
+        display: none!important;
+    }
+}
+
+.global-label {
+    margin: 0!important;
+    padding-top: 6px;
+}
