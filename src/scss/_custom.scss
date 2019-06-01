@@ -1,0 +1,248 @@
+// Here you can add other styles
+.dropdown-item {
+    padding: 7px 15px;
+}
+
+.block {
+    display: block !important;
+}
+
+.flow-apartment {
+    border: 1px dashed #ccc;
+    margin-left: 5px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    position: relative;
+    margin-top: 15px;
+}
+.flow-apartment .aprtment-number {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+}
+.flow-apartment .aprtment-name {
+    text-align: center;
+    font-weight: 500;
+    display: block;
+}
+.flow-apartment img {
+    width: 100%;
+    height: 100px;
+}
+.flow-apartment > i {
+    position: absolute;
+    top: -12px;
+    right: -11px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn.btn-add {
+    background-color: #20a8d8;
+    color: white;
+    padding: 5px;
+}
+
+.core-select__control {
+    border: 1px solid #e4e7ea !important;
+    border-radius: 0.25rem;
+    min-height: 32px !important;
+    height: 32px!important;
+}
+.core-select__value-container{
+    margin-bottom: 6px;
+}
+.core-select__control--is-focused {
+    color: #5c6873 !important;
+    background-color: #fff !important;
+    border-color: #8ad4ee !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.2rem rgba(32, 168, 216, 0.25) !important;
+}
+.core-select__control--is-disabled {
+    background-color:#e4e7ea !important;
+}
+.core-select__dropdown-indicator{
+    padding-top:3px !important
+}
+fieldset:disabled .core-select__control{
+    background-color:#e4e7ea !important;
+}
+.core-select__menu{
+    z-index: 9999;
+}
+.contract-form {
+    font-size: 12px;
+}
+.contract-form .form-group {
+    margin-bottom: 5px;
+}
+.contract-form .card {
+    margin-bottom: 5px;
+}
+.card {
+    margin-bottom: 0.5rem;
+}
+.card-header {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.bg_ddd {
+    background-color: #ddd;
+}
+
+.auto_trim_text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg_ddd {
+    background-color: #ddd;
+}
+
+// CUSTOM CSS KHUONG
+.sidebar {
+    .sidebar-nav {
+        width: 250px;
+    }
+    .nav {
+        width: 250px;
+    }
+    @media (min-width: 992px) {
+        &.sidebar-fixed {
+            width: 250px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    html:not([dir='rtl']) .sidebar-lg-show.sidebar-fixed .main,
+    html:not([dir='rtl']) .sidebar-lg-show.sidebar-fixed .app-footer,
+    html:not([dir='rtl']) .sidebar-show.sidebar-fixed .main,
+    html:not([dir='rtl']) .sidebar-show.sidebar-fixed .app-footer {
+        margin-left: 250px;
+    }
+    .sidebar-fixed .sidebar {
+        width: 250px;
+    }
+    html:not([dir='rtl']) .sidebar {
+        margin-left: -250px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    html:not([dir='rtl']) .sidebar {
+        margin-left: -250px;
+    }
+    .sidebar {
+        width: 250px;
+    }
+    .sm-margin-td-4 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+.max-width-70-percent {
+    max-width: 70% !important;
+}
+.margin-top-10 {
+    margin-top: 10px;
+}
+.margin-top-5 {
+    margin-top: 5px;
+}
+.margin-left-5 {
+    margin-left: 5px;
+}
+.main {
+    ol.breadcrumb {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .table tbody {
+        font-size: 12px;
+    }
+    .khuong-list-tbl {
+        &.table th {
+            vertical-align: middle;
+            border-top: 1px solid #c8ced3;
+            padding: 3px;
+        }
+        &.table td {
+            vertical-align: middle;
+            border-top: 1px solid #c8ced3;
+            padding: 3px;
+        }
+        &.table tbody {
+            font-size: 12px;
+        }
+    }
+    .tbl-oneline {
+      &.table td {
+        overflow:hidden;
+        white-space:nowrap
+      }
+      &.table th {
+        overflow:hidden;
+        white-space:nowrap
+      }
+    }
+    .margin-left-5 {
+        margin-left: 5px;
+    }
+    .container-fluid {
+        .pagination {
+            a.page-link {
+                color: #444444;
+                &:hover {
+                    color: #555555;
+                }
+            }
+            .page-item.active .page-link {
+                background-color: #999999;
+                border-color: #888888;
+                color: white;
+            }
+        }
+    }
+}
+
+.flatpickr-input[readonly] {
+    background-color: #ffffff !important;
+}
+.main .container-fluid {
+    padding: 0 10px !important;
+}
+
+.sidebar .nav-dropdown-items .nav-item {
+    padding-left: 15px !important;
+}
+
+.sidebar .nav-link.active {
+    color: #f8821a !important;
+    background-color: transparent !important;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 1200px !important;
+    }
+}
+
+label.form-control {
+    background-color: #e4e7ea;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 10px!important;
+}
+
+
+
+.input-required{
+    color: red;
+    font-weight: bold;
+    padding-left: 2px
+}
