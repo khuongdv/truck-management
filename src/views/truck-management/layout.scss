@@ -1,9 +1,11 @@
 table > thead > tr {
   font-size: 12px;
 }
-.add-edit-modal {
-  max-width: 60%; // TO OVERWRITE THE VALUE FROM LIB
-  width: 60%;
+@media all and (min-width: 768px){
+  .add-edit-modal {
+    max-width: 60%; // TO OVERWRITE THE VALUE FROM LIB
+    width: 60%;
+  }
 }
 .cursor-pointer {
   cursor: pointer;

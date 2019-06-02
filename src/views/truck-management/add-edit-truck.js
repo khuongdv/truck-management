@@ -72,7 +72,7 @@ class AddEditTruck extends React.Component {
           <Form onSubmit={handleSubmit(form => this.submit(form))} className="form-horizontal">
             <ModalBody>
               <Row>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Biển số<span
@@ -89,7 +89,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Giá xe<span
@@ -106,7 +106,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Cargo Type<span
@@ -128,7 +128,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Tài xế<span
@@ -149,7 +149,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Trọng tải<span
@@ -170,7 +170,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Production Year<span
@@ -201,7 +201,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Kích thước (L-W-H)<span
@@ -218,7 +218,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Trạng thái<span
@@ -239,7 +239,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Địa chỉ đỗ xe</Label>
@@ -259,7 +259,7 @@ class AddEditTruck extends React.Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                   <Row>
                     <Col md="12">
                       <Label htmlFor="text-input">Mô tả</Label>
