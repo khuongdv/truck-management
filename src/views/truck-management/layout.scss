@@ -1,1 +1,7 @@
-
+table > thead > tr > th {
+  font-size: 12px;
+}
+.add-edit-modal {
+  max-width: 60%; // TO OVERWRITE THE VALUE FROM LIB
+  width: 60%;
+}

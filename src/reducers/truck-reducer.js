@@ -1,42 +1,27 @@
-export const LOGIN_START = 'LOGIN_START';
-export const LOGIN_DONE = 'LOGIN_DONE';
-export const LOGIN_FAILED = 'LOGIN_FAILED';
-export const GET_MY_INFO_START = 'GET_MY_INFO_START';
-export const GET_MY_INFO_DONE = 'GET_MY_INFO_DONE';
+export const GET_TRUCK_START = 'GET_TRUCK_START';
+export const GET_TRUCK_DONE = 'GET_TRUCK_DONE';
+export const GET_TRUCK_FAILED = 'GET_TRUCK_FAILED';
 
-export default function userReducer(state = { loading: false }, { type, payload, errorMessage, userRole }) {
+export default function userReducer(state = {loading: false}, {type, payload, errorMessage}) {
   switch (type) {
-    case LOGIN_START:
+    case GET_TRUCK_START:
       return {
         ...state,
         loading: true,
       };
-    case LOGIN_DONE:
+    case GET_TRUCK_DONE:
       return {
         ...state,
         loading: false,
-        user: payload,
-        userRole,
+        truckList: payload.truckList,
         errorMessage,
       };
-    case GET_MY_INFO_START:
-      return {
-        ...state,
-        loading: true,
-      };
-    case LOGIN_FAILED:
+    case GET_TRUCK_FAILED:
       return {
         ...state,
         loading: false,
-        user: {},
-        errorMessage,
+        truckList: [],
       };
-    case GET_MY_INFO_DONE:
-      return {
-        ...state,
-        loading: false,
-        user: payload,
-      }
     default:
       return state;
   }

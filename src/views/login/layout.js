@@ -30,8 +30,8 @@ class LoginScreen extends Component {
     }
   }
 
-  doLogin = () => {
-    this.props.doLogin()
+  doLogin = (data) => {
+    this.props.doLogin(data)
       .then(response => {
         customSuccessMsg({message: 'Đăng nhập thành công'})
         Auth.settoken(response.token || "12345678");

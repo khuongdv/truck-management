@@ -43,7 +43,7 @@ class AsyncSelectFiled extends Component {
     loadData(q) {
         let { url, mappingFunc, searchKey, topItem, noQuery, input, preSelect } = this.props;
         let __url = `${url}`;
-        if (searchKey) {
+        if (searchKey && q) {
             __url = url.indexOf('?') == -1 ? `${url}?${searchKey}=${q || ''}` : `${url}&${searchKey}=${q || ''}`;
         }
         return client.get(__url).then(response => {

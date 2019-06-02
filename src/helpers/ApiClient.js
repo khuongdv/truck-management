@@ -3,28 +3,19 @@ import auth from './auth';
 import history from './m-history';
 
 const methods = ['get', 'post', 'put', 'path', 'del'];
-const MODE = 'DEV'
-const TEST = '127.0.0.1:8000';
-const DEV = 'localhost:';
-export const API_HOST = `http://${MODE === 'DEV' ? DEV + 8011 : TEST}/ketoan/api`;
-export const AUTH_SERVER = `http://${MODE === 'DEV' ? DEV + 8020 : TEST}/auth`;
+export const API_HOST = 'http://localhost:8080'
+export const AUTH_SERVER = 'http://localhost:8080/login'
 
 let formatUrl = path => {
   return API_HOST + path;
 };
 export const login = (username, password) => {
-  let request = superagent.post(`${AUTH_SERVER}/oauth/token`);
-  return request
-    .set('Authorization', 'Basic ' + btoa('public:secret'))
-    .set('Content-Type', 'application/x-www-form-urlencoded')
-    .send('client_id=public')
-    .send('&grant_type=password')
-    .send(`&username=${username}`)
-    .send(`&password=${password}`);
+  let request = superagent.post(AUTH_SERVER);
+  return request.send({username, password})
 };
 
 export const logout = () => {
-  let request = superagent.del(`${AUTH_SERVER}/oauth/logout`);
+  let request = superagent.get('http://localhost:8080/logout');
   request.set('Authorization', `Bearer ${auth.gettoken()}`);
   return request.send()
 }
