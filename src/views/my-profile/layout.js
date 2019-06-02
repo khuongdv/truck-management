@@ -349,7 +349,7 @@ class MyProfile extends Component {
     );
   }
 }
-
+export {MyProfile}
 const UM = reduxForm({
   form: 'my-profile',
 })(MyProfile);

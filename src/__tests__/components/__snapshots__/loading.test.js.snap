@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Loading component it matches the snapshot 1`] = `
+Array [
+  <div
+    className="preloader-mask"
+  >
+    <div
+      className="preloader"
+    >
+      <div
+        className="spin base_clr_brd"
+      >
+        <div
+          className="clip left"
+        >
+          <div
+            className="circle"
+            style={
+              Object {
+                "color": "#38ba72",
+              }
+            }
+          />
+        </div>
+        <div
+          className="gap"
+        >
+          <div
+            className="circle"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="preloader-mask-container"
+  />,
+]
+`;

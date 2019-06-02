@@ -5,7 +5,6 @@ import bgLogin from 'assets/img/login-background.jpg';
 import bgLoginPlaceholder from 'assets/img/login-background-blur.jpg';
 import Loading from 'components/loading';
 import './login.scss';
-import {login} from 'helpers/ApiClient'
 import {Field, Form} from 'redux-form'
 import CustomField from 'components/redux/field'
 import Validation from 'components/redux/validation'
@@ -24,7 +23,6 @@ class LoginScreen extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount', "LOGIN")
     if (Auth.isLogin()) {
       MyNavigator.navigateTo('/dashboard');
     }
