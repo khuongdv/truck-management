@@ -47,7 +47,7 @@ export default class ApiClient {
             request.send(data);
           }
 
-          request.end((error, {body} = {}) => {
+          request.end((error, {body, headers} = {}) => {
             if (error) {
               if ([401, 403].indexOf(error.status) !== -1) {
                 auth.clear();
@@ -61,6 +61,8 @@ export default class ApiClient {
                 history.push('/login');
                 return;
               }
+              // FIXME: THIS IS A TRICKY FIX FOR THE JSON_SERVER. IF WE USE SPRINGBOOT, NO NEED THIS.
+              body.total = parseInt(headers['x-total-count'] || 0, 10)
               resolve(body);
             }
           });

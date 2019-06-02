@@ -13,7 +13,7 @@ export default function userReducer(state = {loading: false}, {type, payload, er
       return {
         ...state,
         loading: false,
-        truckList: payload.truckList,
+        ...payload,
         errorMessage,
       };
     case GET_TRUCK_FAILED:

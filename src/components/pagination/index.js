@@ -9,6 +9,8 @@ class PaginationComponent extends Component {
         return Array.from({ length: end - start }, (v, k) => k + start);
     }
     buildArray(totalPages, page) {
+        page = parseInt(page, 10)
+        totalPages = parseInt(totalPages, 10)
         if (totalPages > 5) {
             let x = totalPages - page;
 
@@ -82,7 +84,7 @@ class PaginationComponent extends Component {
                 )}
                 {page < totalpages && (
                     <li className="page-item">
-                        <a className="page-link" onClick={e => onPageChange(page + 1)} href="javascript:void(0)">
+                        <a className="page-link" onClick={e => onPageChange(parseInt(page, 10) + 1)} href="javascript:void(0)">
                             <i className="fa fa-angle-right" />
                         </a>
                     </li>

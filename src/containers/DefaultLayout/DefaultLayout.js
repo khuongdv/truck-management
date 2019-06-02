@@ -24,13 +24,11 @@ import routes from '../../routes'
 class DefaultLayout extends Component {
 
   componentDidMount() {
-    console.log('componentDidMount', "DEFAULT LAYOUT")
     if (!auth.isLogin()) {
       auth.clear();
       MyNavigator.navigateTo('/login');
     } else {
       this.props.getMyInfo().then(res => {
-        MyNavigator.navigateTo('/dashboard')
       }).catch(ex => {
         console.log("ERRR", ex)
       })
